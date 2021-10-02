@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Alta Trabajador</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Arnulfo Ruiz Sanchez"/>
+		<link rel="stylesheet" href="misestilos.css">
+	</head>
+	<body>
+		<div id="agrupar">
+			<header id="cabecera">
+				<h1>Registro</h1>
+			</header>
+			<section id="seccion">
+				<form name="datos_trabajador" method="post" enctype="multipart/form-data" action="registro trabajador.php" >
+					Usuario:<input name="nombre" type="text" size="27" maxlength="20"> 
+					Nombre(s):<input name="nombre" type="text" size="27" maxlength="50"><br> 
+					Apellido paterno:<input name="app" type="text" size="20" maxlength="40"> 
+					Apellido materno: <input name="apm" type="text" size="20" maxlength="40"><br>
+					Puesto:<select name="puesto" >
+						<option value="CJ">Constructor Jr</option>
+						<option value="C">Constructor</option>
+						<option value="R">Reporteador</option>
+						<option value="T">Tester</option>
+						<option value="AJ">Arquitecto Jr</option>
+						<option value="A">Arquitecto</option>
+					   </select>
+					Teléfono celular:<input name="telefono" type="text" size="10" maxlength="10"><br>
+					Email:<input name="email" type="text" size="35" maxlength="200">
+					Fecha de ingreso:<input name="fecha_ingreso" type="date" > <br>
+					Salario:<input name="salario" type="text" size="16" maxlength="7">
+					CURP:<input name="curp" type="text" size="20" maxlength="18">
+					Mayor de edad:<input name="curp" type="checkbox" size="2" ><br>
+					Acta Nacimiento:<input name="acta" type="file" size="20"><br>
+					Sexo:<input name="sexo" type="radio" value="M">Mujer
+						 <input name="sexo" type="radio" value="H">Hombre
+					Estado civil:<select name="categoria" >
+						  <option value="S">Soltero(a)</option>
+						  <option value="C">Casado(a)</option>
+						 </select><br>
+					<input name="aceptar" type="submit" id="boton1" value="GUARDAR">
+					<input name="eliminar" type="reset" id="boton2" value="LIMPIAR">
+				</form>
+				</section>
+				<footer id="pie">
+					Derechos Reservados &copy; 2021
+				</footer>
+		</div>
+	</body>
+</html>
